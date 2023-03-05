@@ -1,10 +1,10 @@
 {
-  "name": "mb-black",
+  "name": "template",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "private": true,
-  "license": "CHEDDO TECH",
+  "license": "MIT",
   "scripts": {
     "build": "node ./util/build.js",
     "lint": "tslint --project \"tsconfig.json\"",
@@ -12,12 +12,6 @@
     "start:dev": "nodemon --config nodemon.json --env=development",
     "start:staging": "nodemon --config nodemon.json --env=staging",
     "start:prod": "nodemon --config nodemon.json --env=production",
-    "test": "nodemon --config nodemon.test.json",
-    "db:migrate:make": "knex migrate:make --knexfile knexfile.ts -x ts",
-    "db:migrate:latest": "knex migrate:latest --knexfile knexfile.ts ",
-    "db:migrate:seed": "knex seed:make --knexfile knexfile.ts -x ts ",
-    "db:seed:run": "knex seed:run --knexfile knexfile.ts",
-    "db:migrate:rollback": "knex migrate:rollback",
     "jest:test": "jest --config ./jest.config.js"
   },
   "_moduleAliases": {
