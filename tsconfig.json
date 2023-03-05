@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "baseUrl": "./",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "paths": {
+      "@daos/*": [
+        "src/daos/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@svcs/*": [
+        "src/svcs/*"
+      ],
+      "@ctr/*": [
+        "src/ctr/*"
+      ],
+      "@shared/*": [
+        "src/shared/*"
+      ],
+      "@server": [
+        "src/Server"
+      ],
+      "@utils": [
+        "src/utils"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@initials": [
+        "src/initials"
+      ],
+      "@systems": [
+        "src/systems"
+      ],
+      "@db/*": [
+        "db/*"
+      ],
+      "@stores": [
+        "src/stores"
+      ]
+    },
+  },
+  "include": [
+    "./src/**/*",
+    "spec/**/*.ts"
+  ],
+  "exclude": [
+    "src/public/"
+  ]
+}
